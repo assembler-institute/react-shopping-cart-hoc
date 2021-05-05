@@ -113,6 +113,15 @@ found in the doc that the academic team will provide you.
 - Once you are done, you can move on to the optional ones that are marked as
   `Extra 💯`
 
+## Instructions
+
+Follow the instructions in the following files to solve the pill.
+
+- `src/App.js`
+- `src/hoc/withLayout.js`
+- `src/pages/Home/Home.js`
+- `src/pages/NewProduct/NewProduct.js`
+
 ## Project delivery
 
 To deliver this project you must follow the steps indicated in the document:
