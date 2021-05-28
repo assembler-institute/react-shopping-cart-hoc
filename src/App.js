@@ -245,7 +245,7 @@ class App extends Component {
             <Home
               {...routeProps}
               // pass in the following prop so that it has a container-fluid class
-              // fullWidth
+              fullWidth
               cartItems={cartItems}
               products={products}
               isLoading={isLoading}
