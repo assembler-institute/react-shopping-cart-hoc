@@ -4,13 +4,6 @@ import ProductsListing from "../../components/ProductsListing";
 import Cart from "../../components/Cart";
 import withLayout from "../../hoc/withLayout";
 
-/**
- * Remove the following components from the component:
- * 1. fragment
- * 2. <AppHeader />
- * 3. <Main />
- * 4. <Footer />
- */
 function Home({
   products,
   cartItems,
@@ -77,9 +70,8 @@ function Home({
   );
 }
 
-/**
- * Export default the Home by wrapping it in the withLayout hoc
- * export default withLayout(Home);
- */
+/* passing condition */
 export default withLayout(Home)({ fullWidth: true });
-// export default withLayout(Home);
+
+/* simper way 
+export default withLayout(Home); */

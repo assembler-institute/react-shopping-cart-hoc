@@ -3,13 +3,6 @@ import React from "react";
 import NewProductForm from "../../components/NewProductForm";
 import withLayout from "../../hoc/withLayout";
 
-/**
- * Remove the following components from the component:
- * 1. fragment
- * 2. <AppHeader />
- * 3. <Main />
- * 4. <Footer />
- */
 function NewProduct({ saveNewProduct }) {
   return (
     <>
@@ -33,9 +26,8 @@ function NewProduct({ saveNewProduct }) {
   );
 }
 
-/**
- * Export default the NewProduct by wrapping it in the withLayout hoc
- * export default withLayout(NewProduct);
- */
-export default withLayout(NewProduct)({ fullWidth: true });
-// export default withLayout(NewProduct)
+/* passing condition */
+export default withLayout(NewProduct)({ fullWidth: false });
+
+/* simper way 
+export default withLayout(NewProduct); */
