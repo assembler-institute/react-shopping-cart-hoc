@@ -81,4 +81,5 @@ function Home({
  * Export default the Home by wrapping it in the withLayout hoc
  * export default withLayout(Home);
  */
-export default withLayout(Home);
+export default withLayout(Home)({ fullWidth: true });
+// export default withLayout(Home);

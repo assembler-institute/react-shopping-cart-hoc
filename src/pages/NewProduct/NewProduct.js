@@ -37,4 +37,5 @@ function NewProduct({ saveNewProduct }) {
  * Export default the NewProduct by wrapping it in the withLayout hoc
  * export default withLayout(NewProduct);
  */
-export default withLayout(NewProduct);
+export default withLayout(NewProduct)({ fullWidth: true });
+// export default withLayout(NewProduct)

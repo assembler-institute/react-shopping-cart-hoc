@@ -25,19 +25,21 @@ function withLayout(WrappedComponent) {
    *        </Main>
    *    3.3 <Footer />
    */
-  function WrapperComponent({ ...props }) {
-    return (
-      <>
-        <AppHeader />
-        <Main className={props.fullWidth ? "container-fluid" : "container"}>
-          <WrappedComponent {...props} />
-        </Main>
-        <Footer />
-      </>
-    );
+  function withCondition({ fullWidth = false }) {
+    function WrapperComponent({ ...props }) {
+      return (
+        <>
+          <AppHeader />
+          <Main className={fullWidth ? "container-fluid" : "container"}>
+            <WrappedComponent {...props} />
+          </Main>
+          <Footer />
+        </>
+      );
+    }
+    return WrapperComponent;
   }
-
-  return WrapperComponent;
+  return withCondition;
 }
 
 export default withLayout;
