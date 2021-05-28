@@ -241,11 +241,10 @@ class App extends Component {
         <Route
           path="/"
           exact
-          render={(routeProps, ...props) => (
+          render={(routeProps) => (
             <Home
               {...routeProps}
-              // pass in the following prop so that it has a container-fluid class
-              fullWidth={props.fullWidth}
+              fullWidth
               cartItems={cartItems}
               products={products}
               isLoading={isLoading}
