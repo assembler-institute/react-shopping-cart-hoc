@@ -29,5 +29,5 @@ function NewProduct({ saveNewProduct }) {
 /* passing condition */
 export default withLayout(NewProduct)({ fullWidth: false });
 
-/* simper way 
-export default withLayout(NewProduct); */
+/* simper way */
+/* export default withLayout(NewProduct); */

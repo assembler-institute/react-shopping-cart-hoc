@@ -73,5 +73,5 @@ function Home({
 /* passing condition */
 export default withLayout(Home)({ fullWidth: true });
 
-/* simper way 
-export default withLayout(Home); */
+/* simper way */
+/* export default withLayout(Home); */
