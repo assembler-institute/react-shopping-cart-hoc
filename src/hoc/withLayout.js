@@ -1,8 +1,8 @@
-// import React from "react";
+import React from "react";
 
-// import AppHeader from "../components/AppHeader";
-// import Footer from "../components/Footer";
-// import Main from "../components/Main";
+import AppHeader from "../components/AppHeader";
+import Footer from "../components/Footer";
+import Main from "../components/Main";
 
 function getDisplayName(WrappedComponent) {
   return WrappedComponent.displayName || WrappedComponent.name || "Component";
@@ -14,6 +14,17 @@ function withLayout(WrappedComponent) {
     WrappedComponent,
   )})`;
 
+  function WrapperComponent({ ...props }) {
+    return (
+      <>
+        <AppHeader />
+        <Main className={props.fullWidth ? "container-fluid" : "container"}>
+          <WrapperComponent {...props} />
+        </Main>
+        <Footer />
+      </>
+    );
+  }
   /**
    * 1. create a function named WrapperComponent()
    * 2. capture all the props of the WrapperComponent function
@@ -25,8 +36,8 @@ function withLayout(WrappedComponent) {
    *        </Main>
    *    3.3 <Footer />
    */
-
-  return null;
+  return WrapperComponent;
+  // return WrapperComponent;
 }
 
 export default withLayout;
