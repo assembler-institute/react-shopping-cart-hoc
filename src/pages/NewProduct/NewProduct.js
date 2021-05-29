@@ -1,5 +1,6 @@
 import React from "react";
 import NewProductForm from "../../components/NewProductForm";
+import withLayout from "../../hoc/withLayout";
 
 /**
  * Remove the following components from the component:
@@ -31,8 +32,7 @@ function NewProduct({ saveNewProduct }) {
   );
 }
 
-/**
- * Export default the NewProduct by wrapping it in the withLayout hoc
- * export default withLayout(NewProduct);
- */
-export default NewProduct;
+// Export default the NewProduct by wrapping it in the withLayout hoc
+export default withLayout(NewProduct);
+
+// export default NewProduct;
