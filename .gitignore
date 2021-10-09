@@ -57,6 +57,7 @@ typings/
 
 # Optional eslint cache
 .eslintcache
+.eslintignore
 
 # Optional stylelint cache
 .stylelintcache
