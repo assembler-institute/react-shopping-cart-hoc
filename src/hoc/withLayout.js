@@ -1,6 +1,4 @@
 import React from "react";
-import AppHeader from "../components/AppHeader";
-import Main from "../components/Main";
 
 import AppHeader from "../components/AppHeader";
 import Footer from "../components/Footer";
