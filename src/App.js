@@ -236,6 +236,8 @@ class App extends Component {
       loadingError,
     } = this.state;
 
+    const { fullWidth } = this.props;
+
     return (
       <BrowserRouter>
         <Route
@@ -244,8 +246,7 @@ class App extends Component {
           render={(routeProps) => (
             <Home
               {...routeProps}
-              // pass in the following prop so that it has a container-fluid class
-              // fullWidth
+              fullWidth={fullWidth}
               cartItems={cartItems}
               products={products}
               isLoading={isLoading}
