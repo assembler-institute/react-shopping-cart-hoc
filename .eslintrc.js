@@ -2,18 +2,24 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    node: true,
     jest: true,
+    jquery: true,
     "jest/globals": true,
   },
   extends: [
     "airbnb",
     "eslint:recommended",
+    "plugin:compat/recommended",
     "plugin:react/recommended",
     "plugin:jest/recommended",
+    "prettier",
+    "prettier/prettier",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:jsx-a11y/recommended",
-    "prettier",
+    "react-app",
+    "react-app/jest",
   ],
   parser: "@babel/eslint-parser",
   parserOptions: {
@@ -23,7 +29,7 @@ module.exports = {
     jsx: true,
   },
   plugins: [
-    "html",
+    "@html-eslint",
     "jest",
     "react",
     "react-hooks",
@@ -31,7 +37,6 @@ module.exports = {
     "markdown",
     "react-hooks",
     "import",
-    "prettier",
   ],
   settings: {
     react: {
@@ -49,7 +54,6 @@ module.exports = {
     },
   ],
   rules: {
-    "prettier/prettier": "error",
     "react/jsx-filename-extension": "off",
     "import/prefer-default-export": "off",
     "prefer-destructuring": "off",
