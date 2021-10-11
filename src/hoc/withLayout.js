@@ -38,7 +38,7 @@ function withLayout(WrappedComponent) {
     )
   }
 
-  return null;
+  return WrapperComponent;
 }
 
 export default withLayout;
