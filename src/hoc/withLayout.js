@@ -4,15 +4,15 @@ import AppHeader from "../components/AppHeader";
 import Footer from "../components/Footer";
 import Main from "../components/Main";
 
-function getDisplayName(WrappedComponent) {
-  return WrappedComponent.displayName || WrappedComponent.name || "Component";
-}
+// function getDisplayName(WrappedComponent) {
+//   return WrappedComponent.displayName || WrappedComponent.name || "Component";
+// }
 
-/* eslint no-param-reassign: [2, { "props": false }] */
+// /* eslint no-param-reassign: [2, { "props": false }] */
 function withLayout(WrappedComponent) {
-  WrappedComponent.displayName = `withLayout(${getDisplayName(
-    WrappedComponent,
-  )})`;
+  //   WrappedComponent.displayName = `withLayout(${getDisplayName(
+  //     WrappedComponent,
+  //   )})`;
 
   /**
    * 1. create a function named WrapperComponent()
@@ -37,8 +37,8 @@ function withLayout(WrappedComponent) {
       </>
     )
   }
-
   return WrapperComponent;
+
 }
 
 export default withLayout;
