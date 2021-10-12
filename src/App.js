@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-
 import Home from "./pages/Home";
 import NewProduct from "./pages/NewProduct";
-
 import * as api from "./api";
+
 
 const LOCAL_STORAGE_KEY = "react-sc-state";
 
@@ -245,7 +244,7 @@ class App extends Component {
             <Home
               {...routeProps}
               // pass in the following prop so that it has a container-fluid class
-              // fullWidth
+              fullWidth
               cartItems={cartItems}
               products={products}
               isLoading={isLoading}
