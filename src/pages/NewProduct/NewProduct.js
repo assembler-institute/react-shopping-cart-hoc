@@ -1,8 +1,6 @@
 import React from "react";
 
-import AppHeader from "../../components/AppHeader";
-import Footer from "../../components/Footer";
-import Main from "../../components/Main";
+import withLayout from "../../hoc/withLayout";
 import NewProductForm from "../../components/NewProductForm";
 
 /**
@@ -19,9 +17,6 @@ function NewProduct({ saveNewProduct }) {
     </div>
   );
 }
+/* Export default the NewProduct by wrapping it in the withLayout hoc*/
+export default withLayout(NewProduct);
 
-/**
- * Export default the NewProduct by wrapping it in the withLayout hoc
- * export default withLayout(NewProduct);
- */
-export default NewProduct;
