@@ -14,6 +14,9 @@ function withLayout(WrappedComponent) {
     WrappedComponent,
   )})`;
 
+  function WrapperComponent(props){
+    
+  }
   /**
    * 1. create a function named WrapperComponent()
    * 2. capture all the props of the WrapperComponent function
