@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 
+// import { addMethod } from "yup";
 import Home from "./pages/Home";
 import NewProduct from "./pages/NewProduct";
 
@@ -157,7 +158,7 @@ class App extends Component {
       if (
         product.id === productId &&
         product.votes.downVotes.currentValue <
-          product.votes.downVotes.lowerLimit
+        product.votes.downVotes.lowerLimit
       ) {
         return {
           ...product,
