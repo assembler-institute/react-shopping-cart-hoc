@@ -87,4 +87,4 @@ function Home({
  * Export default the Home by wrapping it in the withLayout hoc
  * export default withLayout(Home);
  */
-export default Home;
+export default withLayout(Home);
